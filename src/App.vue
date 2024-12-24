@@ -26,13 +26,13 @@ export default {
         text: newTask,
         completed: false,
       });
-      const removeTask = (taskId) => {
-        tasks.value = tasks.value.filter((task) => task.id !== taskId);
-      };
+    };
+    const removeTask = (taskId) => {
+      tasks.value = tasks.value.filter((task) => task.id !== taskId);
+    };
 
-      const toggleTask = (task) => {
-        task.completed = !task.completed;
-      };
+    const toggleTask = (task) => {
+      task.completed = !task.completed;
     };
 
     return { tasks, addTask, toggleTask, removeTask };
